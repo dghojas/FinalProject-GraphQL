@@ -1,0 +1,104 @@
+*,
+:before,
+:after {
+  background-repeat: no-repeat;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #ecf0f1;
+}
+a,
+a:hover  {
+  text-decoration: none;
+}
+a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  background-color: #34495e;
+}
+.navbar .nav-link {
+  color: #ecf0f1;
+}
+
+.navbar .logo {
+  width: 50px;
+}
+
+.postCard,
+.userCard {
+  position: relative;
+  display: block;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 40%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.postCard .post-image > img,
+.userCard .user-image > img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 300px;
+  min-height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .postCard .post-image > img,
+  .userCard .user-image > img {
+    max-height: 200px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .postCard .post-image > img,
+  .userCard .user-image > img {
+    max-height: inherit;
+    min-height: inherit;
+  }
+}
+
+.postCard .post-body,
+.userCard .user-body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #2c3e50;
+}
+
+.postCard .post-body p,
+.userCard .user-body p,
+.userCard .user-body small {
+  margin-bottom: 0;
+  color: #ecf0f1;
+}
+
+.userCard .user-body hr {
+  border-top: 1px solid #ecf0f1;
+}
