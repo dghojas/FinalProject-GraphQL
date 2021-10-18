@@ -19,6 +19,7 @@ const Home = (...props) => {
 
   // access context
   const { state } = useContext(AuthContext);
+  console.log(state);
 
   let history = useHistory();
   useMemo(() => {

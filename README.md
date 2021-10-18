@@ -6,35 +6,29 @@ _Una app para la social media. Ideal para personas que quieren subir una foto y 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-## Instalación 🔧
-
-_Instalar todas las dependencias del proyecto realizando lo siguiente:_
-
+## Primer repositorio clonado
 ```
-  npm install o npm i || yarn
+  $ git clone https://github.com/dghojas/FinalProject-GraphQL.git
+  $ cd FinalProject-GraphQL
 ```
 
-## Despliegue 📦
-
-_Para levantar el proyecto de manera local se debe realizar lo siguiente:_
-
+## Ejecutar backend (server) 📦
 ```
-  npm run start || yarn start
+  $ cd server
+  $ npm install o npm i || yarn
+  $ npm run start || yarn start
 ```
 
-## Ejecutar 🚀
-
-_Ejecutar la aplicación a través del Simulador o en un dispositivo real._
-
+## Ejecutar frontend (client) 📦
 ```
-  yarn ios
-  yarn android
+  $ cd client
+  $ npm install o npm i || yarn
+  $ npm run start || yarn start
 ```
 
 ## Uso de 🛠️
 
 ### Server
-
 ```
   - Apollo Server
   - Apollo Server Express
@@ -65,20 +59,72 @@ _Ejecutar la aplicación a través del Simulador o en un dispositivo real._
   - React Toastify
 ```
 
-## Screenshot 📸
+## Capturas de pantalla después de que se ejecutó la acción en GraphQL (solo algunos ejemplos):
 
-![Screenshot](screenshot/Screen001.png)
-![Screenshot](screenshot/Screen002.png)
+No olvides agregar el auth token:
 
-![Screenshot](screenshot/Screen003.png)
+![Screenshot](screenshot/000.webp)
 
-![Screenshot](screenshot/Screen004.png)
+Create a User:
 
-![Screenshot](screenshot/Screen005.png)
+ - EndPoint: userCreate
+![Screenshot](screenshot/001.webp)
 
-![Screenshot](screenshot/Screen006.png)
+Update a User:
 
-![Screenshot](screenshot/Screen007.png)
+ - EndPoint: userUpdate
+![Screenshot](screenshot/002.webp)
+
+Show my profile:
+
+ - EndPoint: profile
+![Screenshot](screenshot/003.webp)
+
+Create a Post:
+
+ - EndPoint: postCreate
+![Screenshot](screenshot/004.webp)
+
+Only show post in my user:
+
+ - EndPoint: postsByUser
+![Screenshot](screenshot/005.webp)
+
+List all users:
+
+ - EndPoint: allUsers
+![Screenshot](screenshot/006.webp)
+
+Public profile:
+
+ - EndPoint: publicProfile
+![Screenshot](screenshot/007.webp)
+
+Update a post:
+
+ - EndPoint: postUpdate
+![Screenshot](screenshot/008.webp)
+
+Delete a post:
+
+ - EndPoint: postDelete
+![Screenshot](screenshot/009.webp)
+
+Get Id a post:
+
+ - EndPoint: postGetId
+![Screenshot](screenshot/010.webp)
+
+List all post and pagination (Offset and Limit):
+
+ - EndPoint: allTodosPost
+![Screenshot](screenshot/011.webp)
+
+Search a post:
+
+ - EndPoint: postSearch
+![Screenshot](screenshot/012.webp)
+
 
 ## Autores ✒️
 
