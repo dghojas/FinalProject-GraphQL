@@ -65,7 +65,6 @@ cloudinary.config({
 });
 
 // Rest EndPoint
-// example
 app.get('/rest', authCheckMiddleware, (req, res) => {
   res.json({
     data: 'you hit rest endpoint great!'
@@ -100,7 +99,8 @@ app.post('/remove-images', authCheckMiddleware, (req, res) => {
 });
 
 // Port
-app.listen(process.env.PORT, function () {
-  console.log(`Server is ready at http://localhost:${process.env.PORT}`);
-  console.log(`GraphQL server is ready at http://localhost:${process.env.PORT}${apolloServer.graphqlPath}`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, function () {
+  console.log(`Server is ready at http://localhost:${PORT}`);
+  console.log(`GraphQL server is ready at http://localhost:${PORT}${apolloServer.graphqlPath}`);
 });
